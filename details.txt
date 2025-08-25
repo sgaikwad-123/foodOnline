@@ -1,0 +1,10 @@
+Git Bash
+
+ls----gives list of files
+code . -----open V S code or any other code editor
+pip freeze  --- gives list of all installed packages on computer
+ =====================================
+
+1. create one folder and open git bash there
+2.create virtual enviornment there ---python -m venv env
+3.To activate virtual enviornment ----source env/scripts/activate
