@@ -1,0 +1,368 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FoodBakery</title>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700,800">
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap-theme.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+    <!-- Other CSS -->
+    <link href="{% static 'css/iconmoon.css' %}" rel="stylesheet">
+    <link href="{% static 'css/color.css' %}" rel="stylesheet">
+    <link href="{% static 'css/widget.css' %}" rel="stylesheet">
+    <link href="{% static 'css/animate.css' %}" rel="stylesheet">
+    <link href="{% static 'css/chosen.css' %}" rel="stylesheet">
+    <link href="{% static 'css/swiper.css' %}" rel="stylesheet">
+    <link href="{% static 'css/woocommerce.css' %}" rel="stylesheet">
+    <link href="{% static 'css/prettyPhoto.css' %}" rel="stylesheet">
+    <link href="{% static 'css/cs-foodbakery-plugin.css' %}" rel="stylesheet">
+    <link href="{% static 'css/rtl.css' %}" rel="stylesheet">
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <!-- Other JS -->
+    <script src="{% static 'js/modernizr.js' %}"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header Start -->
+        <header id="header">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="home.html">
+                            <img src="{% static 'extra-images/main-logo.png' %}" alt="FoodBakery" class="img-fluid" style="max-height:60px;">
+                        </a>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main-navbar">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Demos <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="home.html">Food Bakery</a></li>
+                                    <li><a href="mexican-restaurant.html">Mexican Restaurant</a></li>
+                                    <li><a href="foodstop.html">Food Stop</a></li>
+                                    <li><a href="rtl.html">Rtl Demo</a></li>
+                                    <li><a href="food-cout.html">Food Court</a></li>
+                                    <li><a href="single-restaurant.html">Single Restaurant Demo</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="listings.html">Restaurants</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="price-plans.html">Price Plans</a></li>
+                                    <li><a href="how-it-works.html">How it works</a></li>
+                                    <li><a href="faq.html">FAQ’s</a></li>
+                                    <li><a href="404.html">404</a></li>
+                                    <li><a href="search-result.html">Search Result</a></li>
+                                    <li><a href="contact-us.html">Contact</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blogs <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="blog-large.html">Blog Large</a></li>
+                                    <li><a href="blog-medium.html">Blog Medium</a></li>
+                                    <li><a href="blog-masonry.html">Blog Masonry</a></li>
+                                    <li><a href="blog-detail.html">Blog Detail Page</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a class="cs-color cs-popup-joinus-btn login-popup" data-target="#sign-in" data-toggle="modal" href="#user-register">Login / Register</a>
+                            </li>
+                            <li>
+                                <a class="get-start-btn btn btn-primary" href="register-restaurant.html">Register Restaurant</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Header End -->
+
+        <!-- Main Section Start -->
+        <div class="main-section">
+            <!-- Main Search Start -->
+            <div class="page-section nopadding cs-nomargin"
+                style="padding-top: 60px; padding-bottom: 60px; margin-bottom: 0px; background: url('{% static 'extra-images/bg-image1.jpg' %}') no-repeat center / cover;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <div class="element-title">
+                                <h1 style="font-size: 40px; color: #505050; text-transform: uppercase; line-height: 50px; margin-bottom: 25px;">
+                                    We are in the business of food<br>our restaurants do
+                                </h1>
+                                <p style="font-size: 18px; letter-spacing: 1px; color: #505050;">
+                                    Ridiculus sociosqu cursus neque cursus curae ante scelerisque vehicula.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="main-search fancy bg-holder">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="field-holder">
+                                                <input type="text" class="form-control" placeholder="Restaurant name">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                            <div class="field-holder">
+                                                <input type="text" class="form-control" placeholder="All Locations">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12">
+                                            <div class="field-holder">
+                                                <input type="submit" class="btn btn-success btn-block" value="Search">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Main Search End -->
+
+            <!-- Top Restaurants Section Start -->
+            <div class="page-section nopadding cs-nomargin" style="margin-top: 0px; padding-top: 60px; padding-bottom: 0px; margin-bottom: 0px; background: #ffffff;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="element-title align-left">
+                                <h2>Top Restaurants</h2>
+                                <p>Explore restaurants, bars, and cafés by locality</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="company-logo">
+                                <div class="row justify-content-center">
+                                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 text-center">
+                                        <img src="{% static 'extra-images/listing-logo18.png' %}" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 text-center">
+                                        <img src="{% static 'extra-images/fb-restaurant-02.jpg' %}" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 text-center">
+                                        <img src="{% static 'extra-images/fb-restaurant-04.jpg' %}" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 text-center">
+                                        <img src="{% static 'extra-images/fb-restaurant-06.jpg' %}" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 text-center">
+                                        <img src="{% static 'extra-images/xlisting-logo03.png.pagespeed.ic_.aT-o9LinEJ.png' %}" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 text-center">
+                                        <img src="{% static 'extra-images/listing-logo09.png' %}" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 text-center">
+                                        <img src="{% static 'extra-images/listing-logo18.png' %}" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 text-center">
+                                        <img src="{% static 'extra-images/fb-restaurant-09.png' %}" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Top Restaurants Section End -->
+
+            <!-- Choose From Most Popular Listing Start -->
+            <div class="page-section nopadding cs-nomargin" style="margin-top: 0px; padding-top: 60px; padding-bottom: 50px; margin-bottom: 0px; background: #ffffff;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <div class="element-title align-center">
+                                <h2>Choose From Most Popular Restaurants</h2>
+                                <p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="listing fancy">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="list-post featured">
+                                            <div class="img-holder">
+                                                <img src="{% static 'extra-images/listing-logo18.png' %}" class="img-fluid" alt="">
+                                                <span class="restaurant-status close">
+                                                    <em class="bookmarkRibbon"></em>Close
+                                                </span>
+                                            </div>
+                                            <div class="text-holder">
+                                                <div class="list-rating">
+                                                    <div class="rating-star">
+                                                        <span class="rating-box" style="width: 100%;"></span>
+                                                    </div>
+                                                    <span class="reviews">(1)</span>
+                                                </div>
+                                                <div class="post-title">
+                                                    <h5>
+                                                        <a href="listing-detail.html">Restaurant Demo</a>
+                                                        <span class="sponsored text-color">Sponsored</span>
+                                                    </h5>
+                                                </div>
+                                                <address><span>Type of food : </span> Apple Juice</address>
+                                                <div class="delivery-potions">
+                                                    <div class="post-time">
+                                                        <i class="icon-motorcycle"></i>
+                                                        <span>Delivery time: 10 minutes</span>
+                                                    </div>
+                                                    <div class="post-time">
+                                                        <i class="icon-clock4"></i>
+                                                        <span>Pickup time: 15 minutes</span>
+                                                    </div>
+                                                    <span>Totnes</span>
+                                                </div>
+                                            </div>
+                                            <div class="list-option">
+                                                <a href="javascript:void(0);" class="shortlist-btn" data-toggle="modal" data-target="#sign-in">
+                                                    <i class="icon-heart-o"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="list-post featured">
+                                            <div class="img-holder">
+                                                <img src="{% static 'extra-images/listing-logo09.png' %}" class="img-fluid" alt="">
+                                                <span class="restaurant-status open">
+                                                    <em class="bookmarkRibbon"></em>Open
+                                                </span>
+                                            </div>
+                                            <div class="text-holder">
+                                                <div class="list-rating">
+                                                    <div class="rating-star">
+                                                        <span class="rating-box" style="width: 100%;"></span>
+                                                    </div>
+                                                    <span class="reviews">(1)</span>
+                                                </div>
+                                                <div class="post-title">
+                                                    <h5>
+                                                        <a href="listing-detail.html">Classic Restaurant</a>
+                                                        <span class="sponsored text-color">Sponsored</span>
+                                                    </h5>
+                                                </div>
+                                                <address><span>Type of food : </span> Chicken Roast, Chinese Soup, Cold Coffee, Cold Drink, Hot Dogs</address>
+                                                <div class="delivery-potions">
+                                                    <div class="post-time">
+                                                        <i class="icon-motorcycle"></i>
+                                                        <span>Delivery time: 10 minutes</span>
+                                                    </div>
+                                                    <div class="post-time">
+                                                        <i class="icon-clock4"></i>
+                                                        <span>Pickup time: 15 minutes</span>
+                                                    </div>
+                                                    <span>Acle</span>
+                                                </div>
+                                            </div>
+                                            <div class="list-option">
+                                                <a href="javascript:void(0);" class="shortlist-btn" data-toggle="modal" data-target="#sign-in">
+                                                    <i class="icon-heart-o"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Choose From Most Popular Listing End -->
+        </div>
+        <!-- Main Section End -->
+
+        <!-- Footer Start -->
+        <footer id="footer" class="footer-style-2">
+            <div class="footer-widget">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <div class="widget widget-newsletter">
+                                <div class="widget-title">
+                                    <h5>Subscribe to our Newsletter</h5>
+                                </div>
+                                <div class="fieldset">
+                                    <form action="#">
+                                        <div class="field-holder">
+                                            <label>
+                                                <i class="icon-envelope3"></i>
+                                                <input type="text" class="field-input" placeholder="Enter Your Email Address...">
+                                            </label>
+                                        </div>
+                                        <div class="field-holder btn-holder">
+                                            <input class="subscribe-btn bgcolor btn btn-success" type="submit" value="Sign Up">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-sec">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <div class="copyright-inner">
+                                <div class="copy-right">
+                                    <p>© 2020 Foodbakery. All Rights Reserved. Developed By <a href="#">Rathan Kumar</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+    </div>
+
+    <!-- Modal Popup Start -->
+    <div class="modal fade" id="sign-in" aria-labelledby="myModalLabel">
+        <div class="modal-dialog">
+            <div class="login-form">
+                <div class="modal-content">
+                    <!-- Modal content here -->
+                    <!-- ...keep your modal code as before... -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Popup End -->
+
+    <!-- Other JS -->
+    <script src="{% static 'js/responsive.menu.js' %}"></script>
+    <script src="{% static 'js/swiper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap-datepicker.js' %}"></script>
+    <script src="{% static 'js/chosen.js' %}"></script>
+    <script src="{% static 'js/counter.js' %}"></script>
+    <script src="{% static 'js/fliters.js' %}"></script>
+    <script src="{% static 'js/jquery.fitvids.js' %}"></script>
+    <script src="{% static 'js/jquery.growl.js' %}"></script>
+    <script src="{% static 'js/jquery.matchHeight-min.js' %}"></script>
+    <script src="{% static 'js/masonry.pkgd.js' %}"></script>
+    <script src="{% static 'js/skills-progress.js' %}"></script>
+    <script src="{% static 'js/bootstrap-slider.js' %}"></script>
+    <script src="{% static 'js/wow.js' %}"></script>
+    <script src="{% static 'js/functions-plugin.js' %}"></script>
+    <script src="{% static 'js/functions.js' %}"></script>
+</body>
+</html>

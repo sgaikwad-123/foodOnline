@@ -8,3 +8,53 @@ pip freeze  --- gives list of all installed packages on computer
 1. create one folder and open git bash there
 2.create virtual enviornment there ---python -m venv env
 3.To activate virtual enviornment ----source env/scripts/activate
+4.to deactivate the virtual enviornment ---- deactivate
+---pip install django
+---django-admin startproject foodOnline_main .
+----code .
+
+Noe V S code opened .now we will open new terminal from v S code .before that we need to exit from git bash . so we will ---deactivate the env from that git bash terminal and exit from that terminal.
+
+----pip freeze
+asgiref==3.9.1
+Django==5.2.5
+sqlparse==0.5.3
+tzdata==2025.2
+
+----first urls.py set path for home 
+----second create new file views.py and write functions like home about and all
+----now open git account, create new repository ,on v s code terminal write command like git init here we can see address of newly created repository.
+---now we are creating .gitignore file into main directory. go to gitignore.io website and type django and click on create. now created file should paste on gitignore file. 
+--- git add -A ------to add all changes.
+----git commit -m "first commit"
+---git push ...
+---------
+now add templates folder into direcory and in the DIR=['templates'] into template section of settings.py file . add home.html file into template folder and also update views.py file use render ...
+-----because of no table exist for admin section we need to run this python manage.py migrate. Then python manage.py createsuperuser---and add username ,email ,password-
+$ python manage.py createsuperuser
+Username (leave blank to use 'admin'): Djangoadmin
+Email address: djangoadmin@gmail.com
+Password: Djangoadmin
+Password (again): Djangoadmin
+The password is too similar to the username.
+Bypass password validation and create user anyway? [y/N]: y
+Superuser created successfully.--------------
+we are looking for online template-Rohitkumar buy the template and make it available for us free. its downloaded from https://freetemplate.rathank.com/  
+it is downloaded and opened into django template as home.html and there we need to change some addresses .
+---to collect all the static files we need to run this file ...python manage.py collectstatic.
+
+we are using postgressql database because it is MVCC it stores large amount of data and also concurency is there means at a time 1000 users can access the data and saves the data.performance is very good.
+postgres is downloaded and installed . password is admin. search pgadmin and open it . now create database there.
+updated settings.py file and installed psycopg2 . pip install psycopg2.
+there is django creating default tables for that we need to run python manage.py migrate. actually before this command in postgres table section is empty.
+in the postres created all default tables automatically by running python manage.py migrate command. there is auth_user table where user details get stored . we will create superuser by python manage.py createsuperuser .the details like email username gets store into auth_user table. 
+now username-djangoadmin,password-admin@123,email-djangoadmin@gmail.com,saved into auth_user table.
+
+when we direct push code on github there is chances to share secrete key ,password and email_id because our repository is public to prevent this we have django feature that is decouple.on the browser type decouple there will get commands and some settings . copy pip install python-decouple and install from v s code terminal.
+
+add from decouple import config in the settings.py file.also create .env file from main folder and secrete key from settings.py file.
+
+http://127.0.0.1:8000/admin/---username-djangoadmin and password-admin@123
+
+
+
